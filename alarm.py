@@ -67,11 +67,11 @@ class Alarm:
 
     def trigger_alarm(self):
         """Запускает будильник."""
-        music_files = ["song1.mp3", "song2.mp3", "song3.mp3"]  # List of music files
+        music_files = ["song1.mp3", "song2.mp3", "song3.mp3", "song4.mp3", "song5.mp3", "song6.mp3", "song7.mp3", "song8.mp3", "song9.mp3"]  # List of music files
         self.music_manager.play_music(music_files)
-        messagebox.showinfo("Будильник", "Просыпайтесь!")
+        messagebox.showinfo("Будильник", "Доброе утро!")
         self.root.deiconify()  # Show the main window again
-        self.notification_manager.send_notification("Просыпайтесь!")
+        self.notification_manager.send_notification("Доброе утро!")
         
 
 
